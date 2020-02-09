@@ -33,6 +33,9 @@ Things you may want to cover:
     -description must be present
     -description must be between 20 and 600 characters
     -issue_type, priority, and status must be valid
+    -issue_type should be issue, enhancement, or feature
     -default value of issue_type should be feature
+    -priority should be low, medium, or high
     -default value of priority should be medium
+    -status should be open, closed, monitor
     -default value of status should be open
