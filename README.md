@@ -39,3 +39,14 @@ Things you may want to cover:
     -default value of priority should be medium
     -status should be open, closed, monitor
     -default value of status should be open
+    
+* Testing specifications for users:
+    lname: string
+    fname: string
+    email: string
+    thumbnail: string
+    
+    -lname, fname, and email must be present
+    -email must be unique and be a valid format for an email address
+    -thumbnail must end with either .png, .jpg, or .gif (ok to leave black)
+    
