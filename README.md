@@ -50,3 +50,5 @@ Things you may want to cover:
     -email must be unique and be a valid format for an email address
     -thumbnail must end with either .png, .jpg, or .gif (ok to leave black)
     
+    every bug is owned by a single user, a single user may own many bugs
+    
