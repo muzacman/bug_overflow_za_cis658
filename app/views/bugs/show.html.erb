@@ -2,7 +2,7 @@
 
 <p>
   <strong>User:</strong>
-  <%= (@bug.user.try("#{:fname} #{:lname}") || "NA")%>
+  <%= ("#{@bug.user.fname} #{@bug.user.lname}") || ("NA")%>
 </p>
 
 <p>
