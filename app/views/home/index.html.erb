@@ -1,0 +1,29 @@
+<div class="jumbotron-fluid">
+  <div class="container">
+    <h1>Bug Overflow</h1>
+    <!--Blue jeans frog image used with permission from Danel Solabarrieta -
+    https://www.flickr.com/photos/danelu/10410910406 Image scaled to fit -->
+    <p>Ready to squash some bugs?</p>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    <p id="credit"><a href="https://www.flickr.com/photos/danelu/10410910406">Photo by Danel Solabarrieta</a></p>
+  </div>
+</div>
+<div class="container-fluid">
+  <!-- Example row of columns -->
+  <div class="row">
+  <% @bugs.each do |bug| %>
+    <div class="col-md-4">
+      <h2><%=bug.title%></h2>
+      <p><%=bug.description.truncate_words(30)%></p>
+      <p>
+        <%= link_to 'Read more &raquo;'.html_safe, bug, class: "btn btn-default"%>
+      </p>
+    </div>
+  <% end %>
+  </div>
+  <hr>
+
+  <footer>
+    <p>&copy; 2018 Company, Inc.</p>
+  </footer>
+</div>

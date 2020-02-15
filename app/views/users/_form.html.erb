@@ -1,6 +1,6 @@
 <%= form_with(model: user, local: true) do |form| %>
   <% if user.errors.any? %>
-    <div id="error_explanation">
+    <div id="error_explanation" class="alert alert-danger">
       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
 
       <ul>
@@ -11,27 +11,28 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :fname %>
+  <div class="form-group">
+    <%= form.label :fname, "First Name" %>
     <%= form.text_field :fname %>
   </div>
 
-  <div class="field">
-    <%= form.label :lname %>
+  <div class="form-group">
+    <%= form.label :lname, "Last Name" %>
     <%= form.text_field :lname %>
   </div>
 
-  <div class="field">
-    <%= form.label :email %>
+  <div class="form-group">
+    <%= form.label :email, "Email" %>
     <%= form.text_field :email %>
   </div>
 
-  <div class="field">
-    <%= form.label :thumbnail %>
+  <div class="form-group">
+    <%= form.label :thumbnail, "Profile Image" %>
     <%= form.text_field :thumbnail %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-primary" %>
+    <%= link_to 'Cancel', users_path, class: "btn btn-danger" %>
   </div>
 <% end %>
