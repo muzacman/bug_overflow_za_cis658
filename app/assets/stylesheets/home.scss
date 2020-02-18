@@ -1,12 +1,26 @@
+$banner-height: 400px;
+$banner-height-sm: 200px;
+$bg-dark: #6EAFB2;
+$lt-text: #fff;
+
 .jumbotron-fluid {
-  background-image: asset-url('frog.jpg');
+  background-image: asset-url('frog.png');
   background-size: cover;
-  background-position: left bottom;
-  height: 500px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  padding: 100px 0 100px 0;
+  @media (min-width: 300px) {
+    height: $banner-height-sm;
+    padding: 25px 0 25px 0;
+  }
+  @media (min-width: 800px) {
+    height: $banner-height;
+    padding: 100px 0 100px 0;
+  }
 }
 
 .jumbotron-fluid h1 {
-  color: #fff;
+  color: $lt-text;
   text-align: center;
   margin-bottom: 30px;
   letter-spacing: -1px;
@@ -14,15 +28,23 @@
 }
 
 .jumbotron-fluid p {
-  color: #fff;
+  color: $lt-text;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
-#credit {
-  text-align: end;
-  position: absolute;
-  bottom: 20%;
-  right: 10%;
+.row {
+  text-align: center;
+  text-transform: capitalize;
+  padding-top: 20px;
+}
+
+.container-fluid, footer {
+  background-color: $bg-dark;
+  color: $lt-text;
+}
+
+link {
+  color: rgb(16, 55, 36);
 }
