@@ -3,6 +3,10 @@ $banner-height-sm: 200px;
 $bg-dark: #6EAFB2;
 $lt-text: #fff;
 
+html {
+  background-color: $bg-dark;
+}
+
 .jumbotron-fluid {
   background-image: asset-url('frog.png');
   background-size: cover;
