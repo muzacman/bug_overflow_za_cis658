@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails Bug_Overflow_ZA: test" uuid="2fe1a165-90ca-457e-933e-f8fe116a391e">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" exact-version="0" />
+      <auth-required>false</auth-required>
+      <schema-mapping />
+    </data-source>
+    <data-source name="Rails Bug_Overflow_ZA: production" uuid="cde80fb2-fbc4-471f-b8e5-d44c269ca004">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <user-name>workspace</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="Rails Bug_Overflow_ZA: development" uuid="16891abb-8df2-4848-9dc8-92532cb0ed1c">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" exact-version="0" />
+      <auth-required>false</auth-required>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>
